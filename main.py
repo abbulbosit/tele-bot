@@ -1,4 +1,3 @@
-import os
 import logging
 from db import Database
 from aiogram import Bot, Dispatcher, executor, types
