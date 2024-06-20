@@ -1,15 +1,16 @@
 import psycopg2 as psql
 import os
 
+
 class Database:
     @staticmethod
     async def connect(query, query_type):
         db = psql.connect(
-            database="users",
-            user="postgres",
-            password="2009",
-            host="localhost",
-            port="5432"
+            database=os.getenv('db_name'),
+            user=os.getenv('user_name'),
+            password=os.getenv('user_password'),
+            host=os.getenv('user_host'),
+            port=os.getenv('port')
         )
 
         cursor = db.cursor()

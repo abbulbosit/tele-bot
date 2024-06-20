@@ -1,0 +1,4 @@
+console~=0.9907
+attrs~=23.2.0
+psycopg2~=2.9.9
+aiogram~=2.14
